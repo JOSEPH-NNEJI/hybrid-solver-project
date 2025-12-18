@@ -3,7 +3,7 @@ matplotlib.use('Agg')  # Prevents server errors with plots
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
-from solver import HybridSolver
+from solver2 import HybridSolver
 
 # --- Page Config ---
 st.set_page_config(page_title="Hybrid Root Finder", page_icon="🧮", layout="wide")
@@ -96,3 +96,4 @@ if st.sidebar.button("Find Root"):
                     "Function Value f(x)": "{:.2e}",
                     "Error Estimate": "{:.2e}"
                 }).applymap(lambda v: 'color: red;' if 'Switched' in str(v) else None, subset=['Decision Logic']))
+
