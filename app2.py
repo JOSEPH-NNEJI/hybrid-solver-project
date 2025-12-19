@@ -97,3 +97,4 @@ if st.sidebar.button("Find Root"):
                     "Error Estimate": "{:.2e}"
                 }).applymap(lambda v: 'color: red;' if 'Switched' in str(v) else None, subset=['Decision Logic']))
 
+
